@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>formulario </title>
 </head>
+
 <body>
-    
+    <h1> exemplo de formulario </h1>
+    <!-- Formulário de Cadastro -->
+    <form name="signup" onsubmit="alert('Enviar formulario');" method="post" action="#">
+        <!-- Campo de Nome -->
+        Nome: <input type="text" name="name"><br>
+
+        <!-- Campo de Idade -->
+        Idade: <input type="number" name="name"><br>
+
+        <!-- Campo de Senha -->
+        Senha: <input type="password" name="password"><br>
+
+        <!-- Botão de Envio -->
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Formulário de Pedido de Pizza -->
+    <form method="post">
+        <!-- Título do Pedido -->
+        <h3>Você selecionou: pizza de calabresa</h3>
+
+        <!-- Opções de Ingredientes -->
+        <p>Quais opcionais você deseja?</p>
+        <input type="checkbox" name="opcional[]" value="queijo"> + Queijo <br>
+        <input type="checkbox" name="opcional[]" value="calabresa"> + Calabresa <br>
+        <input type="checkbox" name="opcional[]" value="cebola"> + Cebola <br>
+        <input type="checkbox" name="opcional[]" value="azeitona"> + Azeitona <br>
+
+        <!-- Opção de Borda Recheada -->
+        <p>Borda recheada?</p>
+        <input type="radio" name="borda" value="sim">Sim<br>
+        <input type="radio" name="borda" value="não">Não<br>
+
+        <!-- Opções de Bebida -->
+        <p>Bebida</p>
+        <input type="radio" name="bebida" value="suco">Suco<br>
+        <input type="radio" name="bebida" value="refri">Refrigerante<br>
+        <input type="radio" name="bebida" value="agua">Água<br>
+
+        <!-- Botão de Envio do Pedido -->
+        <button type="submit">Enviar Pedido</button><br><br>
+
+
+        <select name="role" >
+            <option value="">selecione o cargo </option>
+            <option selected value=""> gerente</option>
+            <option value="">auxiliar</option>
+            <option value="">profissional</option>
+            <option value="">ajudante</option>
+        </select> <br><br>
+
+        <TEXTarea  rows="10" cols="20" name="message"> </TEXTarea>
+        <button  type="submit">enviar</button>
+
+    </form>
 </body>
+
 </html>
