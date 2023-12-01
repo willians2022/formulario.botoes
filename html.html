@@ -1,109 +1,57 @@
 <!DOCTYPE html>
-<!-- Define a versão do HTML como HTML5 -->
 <html lang="en">
 
 <head>
-    <!-- Inicia a seção do cabeçalho da página -->
     <meta charset="UTF-8">
-    <!-- Define a codificação de caracteres como UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Configura a visualização para dispositivos móveis -->
     <title>Formulário</title>
-    <!-- Define o título da página que será exibido na barra de título do navegador -->
 </head>
 
 <body>
     <fieldset>
         <legend>Dados pessoais</legend>
-        <!-- Inicia a seção do corpo da página -->
 
         <h1>Exemplo de Formulário</h1>
-        <!-- Cria um cabeçalho de nível 1 com o texto "Exemplo de Formulário" -->
 
-        <!-- Formulário de Cadastro -->
         <form name="signup" onsubmit="alert('Enviar formulário');" method="post" action="#">
-            <!-- Inicia o formulário de cadastro com algumas configurações -->
-            <!-- Campo de Nome -->
             Nome: <input type="text" name="name"><br>
-            <!-- Campo de entrada de texto para o nome do usuário -->
-
-            <!-- Campo de Idade -->
             Idade: <input type="number" name="age"><br>
-            <!-- Campo de entrada numérica para a idade do usuário -->
-
-            <!-- Campo de Senha -->
             Senha: <input type="password" name="password"><br>
-            <!-- Campo de entrada de senha para a senha do usuário -->
-
-            <!-- Botão de Envio -->
             <button type="submit">Enviar</button>
-            <!-- Botão de envio que enviará o formulário quando clicado -->
         </form>
     </fieldset><br>
 
-    <!-- Formulário de Pedido de Pizza  -->
-    <!-- sem a tag legend -->
-
     <fieldset>
         <form method="post">
-            <!-- Inicia o formulário de pedido de pizza usando o método POST -->
-
-            <!-- Título do Pedido -->
             <h3>Você selecionou: pizza de calabresa</h3>
-            <!-- Cria um cabeçalho de nível 3 indicando a escolha da pizza -->
 
-            <!-- Opções de Ingredientes -->
             <p>Quais opcionais você deseja?</p>
-            <!-- Parágrafo indicando a pergunta sobre os opcionais -->
             <input type="checkbox" name="optional[]" value="queijo"> + Queijo <br>
-            <!-- Caixa de seleção para queijo -->
             <input type="checkbox" name="optional[]" value="calabresa"> + Calabresa <br>
-            <!-- Caixa de seleção para calabresa -->
             <input type="checkbox" name="optional[]" value="cebola"> + Cebola <br>
-            <!-- Caixa de seleção para cebola -->
             <input type="checkbox" name="optional[]" value="azeitona"> + Azeitona <br>
-            <!-- Caixa de seleção para azeitona -->
 
-            <!-- Opção de Borda Recheada -->
             <p>Borda recheada?</p>
-            <!-- Parágrafo indicando a pergunta sobre a borda recheada -->
             <input type="radio" name="crust" value="sim">Sim<br>
-            <!-- Botão de opção para borda recheada (sim) -->
             <input type="radio" name="crust" value="não">Não<br>
-            <!-- Botão de opção para borda recheada (não) -->
 
-            <!-- Opções de Bebida -->
             <p>Bebida</p>
-            <!-- Parágrafo indicando a pergunta sobre a bebida -->
             <input type="radio" name="drink" value="suco">Suco<br>
-            <!-- Botão de opção para suco -->
             <input type="radio" name="drink" value="refri">Refrigerante<br>
-            <!-- Botão de opção para refrigerante -->
             <input type="radio" name="drink" value="agua">Água<br>
-            <!-- Botão de opção para água -->
 
-            <!-- Botão de Envio do Pedido -->
             <button type="submit">Enviar Pedido</button><br><br>
-            <!-- Botão de envio que enviará o formulário de pedido de pizza quando clicado -->
 
             <select name="role">
-                <!-- Caixa de seleção para o cargo -->
                 <option value="">Selecione o cargo</option>
-                <!-- Opção padrão indicando para selecionar um cargo -->
                 <option selected value="">Gerente</option>
-                <!-- Opção selecionada inicialmente para gerente -->
                 <option value="">Auxiliar</option>
-                <!-- Opção para auxiliar -->
                 <option value="">Profissional</option>
-                <!-- Opção para profissional -->
                 <option value="">Ajudante</option>
-                <!-- Opção para ajudante -->
             </select> <br><br>
 
             <textarea rows="10" cols="20" name="message"></textarea>
-            <!-- Área de texto para a mensagem -->
             <button type="submit">Enviar</button>
-            <!-- Botão de envio para o segundo formulário -->
         </form>
     </fieldset>
 </body>
